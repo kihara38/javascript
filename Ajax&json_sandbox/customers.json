@@ -1,0 +1,20 @@
+[
+  {
+    "id":1,
+    "name":"Nelki kihara",
+    "company":"123 Designs",
+    "phone":"44444 5555 77777"
+  },
+  {
+    "id":2,
+    "name":"Luise lombo",
+    "company":"safaricom",
+    "phone":"3333 5555 77777"
+  },
+  {
+    "id":3,
+    "name":"jame kiare",
+    "company":"neflix",
+    "phone":"5555 5555 77777"
+  }
+]
