@@ -18,11 +18,13 @@ const posts=[
 // }
 // createPost({title:'post Threee',body:'this is post three'});
 // getPost()
-function createPost(post,callBack){
-  setTimeout(function(){
-    posts.push(post);
-    callBack()
-  },2000)
+function createPost(post){
+  return new Promise(function(resolve,reject){
+    setTimeout(function(){
+      posts.push(post);
+      resolve()
+    },2000);
+  }); 
 }
 function getPosts(){
   setTimeout(function(){
@@ -33,4 +35,4 @@ function getPosts(){
     document.body.innerHTML=output;
   },1000);
 }
-createPost({title:'post Threee',body:'this is post three'},getPosts );
+createPost({title:'post Threee',body:'this is post three'}).then(getPosts);
