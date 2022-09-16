@@ -1,49 +1,28 @@
-const http=new easyHTTP;
-// //get posts
-// http.get('https://jsonplaceholder.typicode.com/posts',
-// function(err,posts){
-//   if(err){
-//     console.log(err)
-//   }else{
-//   console.log(posts)
-// }
-// });
-// //get  single post
-// http.get('https://jsonplaceholder.typicode.com/posts/1',
-// function(err,post){
-//   if(err){
-//     console.log(err)
-//   }else{
-//   console.log(post)
-//   }
-// });
-// create data
-// const data={
-//   title:'custom post',
-//   body:'this is a custom post'
-// };
-// // create post
-// http.post('https://jsonplaceholder.typicode.com/posts',data, function(err,post){
-//       if(err){
-//         console.log(err)
-//       }else{
-//       console.log(post)
-//       }
-// })
-// update post
-// http.put('https://jsonplaceholder.typicode.com/posts/1',data,function(err,post){
-//       if(err){
-//         console.log(err)
-//       }else{
-//       console.log(post)
-//       }
-// })
-//delete post
-http.delete('https://jsonplaceholder.typicode.com/posts/1',
-function(err,response){
-  if(err){
-    console.log(err)
-  }else{
-  console.log(response)
+const http=new EasyHTTP;
+
+// //get users
+// http.get('http://jsonplaceholder.typicode.com/users')
+// .then(data=>console.log(data))
+// .catch(err=>console.log(err))
+
+//user data
+const data={
+  name:'Kihara Nelson',
+  username:'Nelki',
+  email:'nelki@gmail.com'
 }
-});
+
+//create post
+// http.post('http://jsonplaceholder.typicode.com/users',data)
+// .then(data=>console.log(data))
+// .catch(err=>console.log(err))
+ 
+// //update post
+// http.put('http://jsonplaceholder.typicode.com/users/2',data)
+// .then(data=>console.log(data))
+// .catch(err=>console.log(err))
+ 
+//delete post
+http.delete('http://jsonplaceholder.typicode.com/users/2')
+.then(data=>console.log(data))
+.catch(err=>console.log(err))
