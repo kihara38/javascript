@@ -31,16 +31,16 @@
 // console.log(name.next().value);
 // console.log(name.next().value);
 
-function* createId(){
-  let index=1;
-  while (true) {
-    yield index++;
-  }
-}
-const gen=createId();
+// function* createId(){
+//   let index=1;
+//   while (true) {
+//     yield index++;
+//   }
+// }
+// const gen=createId();
 
-console.log(gen.next().value)
-console.log(gen.next().value)
-console.log(gen.next().value)
-console.log(gen.next().value)
-console.log(gen.next().value)
+// console.log(gen.next().value)
+// console.log(gen.next().value)
+// console.log(gen.next().value)
+// console.log(gen.next().value)
+// console.log(gen.next().value)
